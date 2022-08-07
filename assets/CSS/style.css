@@ -1,0 +1,171 @@
+body,
+html {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: sans-serif;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 0em 3em 0em;
+    background-color: #FFFAFA;
+    box-shadow: 1px 1px 10px;
+}
+
+.idioma {
+    display: flex;
+}
+
+.idioma a,
+.social a {
+    margin-right: 0.5em;
+}
+
+.social {
+    display: flex;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+
+/* Section */
+
+section {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-inline: auto;
+    margin-bottom: 10%;
+    min-width: 60%;
+    min-height: 300px;
+    max-height: auto;
+}
+
+.sec1 h2,
+.sec2 .segundo {
+    max-width: 300px;
+}
+
+.conhecimentos {
+    display: flex;
+}
+
+.card {
+    display: inline-block;
+    flex-flow: row nowrap;
+    margin: 2em;
+    min-width: 20%;
+}
+
+.sec4 {
+    display: flex;
+    justify-content: center;
+}
+
+.sec4 h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#items-wrapper {
+    width: 100vw;
+}
+
+#items {
+    display: flex;
+    overflow-x: auto;
+}
+
+.item {
+    flex: none;
+    margin: 2%;
+    text-align: center;
+}
+
+.sec4 img {
+    max-width: 45em;
+}
+
+/* Footer */
+
+.bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.bot a {
+    color: #fff;
+}
+
+.bot p {
+    margin-inline: auto;
+}
+
+@media only screen and (max-width: 600px) {
+   
+    /* Header */
+
+    .navbar,
+    .bot {
+        font-size: 0.7em;
+    }
+
+    .idioma {
+        flex-direction: column;
+    }
+
+    a {
+        padding: 0.3em;
+    }
+
+    /* Section */
+
+    .box {
+        justify-items: center;
+        margin: 20%;
+    }
+
+    .sec1 h2,
+    .sec2 .segundo {
+        text-align: center;
+    }
+
+    .sec3 h3 {
+        width: 300px;
+        text-align: center;
+    }
+
+    .sec3 ul {
+        text-align: center;
+        margin-right: 20%;
+    }
+
+    .conhecimentos {
+        flex-direction: column;
+        font-size: 0.9em;
+
+    }
+
+    .sec4 img {
+        width: 30em;
+    }
+}
