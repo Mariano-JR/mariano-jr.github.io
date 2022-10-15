@@ -84,22 +84,25 @@ section {
 }
 
 #items-wrapper {
-    width: 100vw;
+    overflow-x: auto;
+    width: 90vw;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
 }
 
 #items {
     display: flex;
-    overflow-x: auto;
 }
 
-.item {
-    flex: none;
-    margin: 2%;
-    text-align: center;
+#items-wrapper .item {
+    flex: 0 0 20%;
+    padding: 10px;
+    scroll-snap-align: start;
 }
 
 .sec4 img {
-    max-width: 45em;
+    height: 20em;
+    width: 45em;
 }
 
 /* Footer */
@@ -166,6 +169,7 @@ section {
     }
 
     .sec4 img {
+        height: 12em;
         width: 25em;
     }
 }
